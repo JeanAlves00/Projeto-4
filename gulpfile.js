@@ -1,13 +1,20 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 
-function styles () {
+function styles() {
     return gulp.src('./src/style/*.scss')
         .pipe(sass( {outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(gulp.dest('./dist/style'))     
 }
 
-exports.defaut = styles;
+function images(){
+    return gulp.src('./src/images/**/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('./dist/images'))
+}
+
+exports.defaut = gulp.parallel(styles, images);
+
 exports.watch = function () {
     gulp.watch('./src/style/*.scss', gulp.parallel(styles));
 }
