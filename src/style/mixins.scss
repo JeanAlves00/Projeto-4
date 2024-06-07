@@ -1,15 +1,4 @@
-@use 'hero';
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box
-}
-
-$corDeFundo: #040714;
-$corTextoPrincipal: silver;
-$corTextoSecundaria: #f9f9f9;
+@import 'variaveis';
 
 @mixin text($fontSize: 16px) {
     font-size: $fontSize;
@@ -43,8 +32,4 @@ $corTextoSecundaria: #f9f9f9;
     &:hover {
         text-decoration: underline;
     }
-}
-
-body {
-    background-color: $corDeFundo;
 }

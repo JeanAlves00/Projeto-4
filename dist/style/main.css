@@ -1,1 +1,1 @@
-body{background-color:red}
+.hero{padding:5.6vw;min-height:80vh;background-image:url("../images/hero_desktop.jpeg")}*{margin:0;padding:0;box-sizing:border-box}.text--big{font-size:18px;line-height:28px;color:silver}.text{font-size:16px;line-height:26px;color:silver}.text--small{font-size:12px;line-height:22px;color:silver}.link-text{font-size:16px;line-height:26px;color:silver;color:#f9f9f9;text-decoration:none}.link-text:hover{text-decoration:underline}body{background-color:#040714}
