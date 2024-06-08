@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'Navenir';
+    src: url('../../assets/fonts/Avenir-Regular.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Navenir';
+    src: url('../../assets/fonts/Avenir-Bold.woff2');
+    font-weight: 700;
+}
+
 $corDeFundo: #040714;
+
 $corTextoPrincipal: silver;
 $corTextoSecundaria: #f9f9f9;
+
+$corBotao: #6421ff;
+$corBotaoHover: #7147ed;

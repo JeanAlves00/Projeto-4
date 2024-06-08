@@ -6,12 +6,10 @@
     color: $corTextoPrincipal;
 }
 
-@mixin title ($fontSize: 18px) {
+@mixin title ($fontSize: 40px) {
     @include text($fontSize);
     color: $corTextoSecundaria;
 }
-
-
 
 .text--big {
     @include text(18px);
@@ -25,11 +23,21 @@
     @include text(12px);
 }
 
+
 .link-text {
-    @include text;
+    @include text(18px);	
     color: $corTextoSecundaria;
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
+    text-decoration: underline;
+}   
+
+.title--big {
+    @include title(44px);
+}
+
+.title {
+    @include title(40px);
+}
+
+.title--small {
+    @include title(28px);
 }

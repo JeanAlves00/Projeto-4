@@ -1,4 +1,6 @@
 @use 'hero';
+@import 'mixins';
+@import 'variaveis';
 
 
 * {
@@ -7,44 +9,7 @@
     box-sizing: border-box
 }
 
-$corDeFundo: #040714;
-$corTextoPrincipal: silver;
-$corTextoSecundaria: #f9f9f9;
-
-@mixin text($fontSize: 16px) {
-    font-size: $fontSize;
-    line-height: $fontSize + 10px;
-    color: $corTextoPrincipal;
-}
-
-@mixin title ($fontSize: 18px) {
-    @include text($fontSize);
-    color: $corTextoSecundaria;
-}
-
-
-
-.text--big {
-    @include text(18px);
-}
-
-.text {
-    @include text;
-}
-
-.text--small {
-    @include text(12px);
-}
-
-.link-text {
-    @include text;
-    color: $corTextoSecundaria;
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
-}
-
 body {
     background-color: $corDeFundo;
+    font-family: Avenir, sans-serif;
 }
