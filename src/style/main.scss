@@ -1,8 +1,11 @@
 @use 'hero';
 @use 'shows';
 @use 'plans';
+@use 'avialable-devices';
+@use 'faq';
 @import 'mixins';
 @import 'variaveis';
+
 
 
 * {
@@ -14,4 +17,62 @@
 body {
     background-color: $corDeFundo;
     font-family: Avenir, sans-serif;
+}
+
+.button {
+    display: block;
+    border: none;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: $corTextoSecundaria;
+    background-color: $corBotao;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-top: 2vw;
+    margin-bottom: 8px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $corBotaoHover;
+    }
+}
+
+.image-text-section {
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    img {
+        max-width: 100%;
+    }
+
+    &__text_container {
+        padding: 2vw;
+
+        h2 {
+            margin-bottom: 24px;
+        }
+    }
+
+    &--image-full-width {
+        display: block;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        &__text_container {
+            position: absolute;
+            top: 0vw;
+            left: 50%;
+            height: 100%;
+            display: flex;
+            width: calc(50% - 5.6vw);
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
 }

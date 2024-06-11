@@ -37,25 +37,7 @@
                 img {
                     max-width: 60%;
                 }
-
-                button {
-                    display: block;
-                    border: none;
-                    width: 100%;
-                    height: 60px;
-                    font-size: 18px;
-                    color: $corTextoSecundaria;
-                    background-color: $corBotao;
-                    text-transform: uppercase;
-                    border-radius: 4px;
-                    margin-top: 2vw;
-                    margin-bottom: 8px;
-                    cursor: pointer;
-
-                    &:hover {
-                        background-color: $corBotaoHover;
-                    }
-                }
+                
             }
         }
     }
