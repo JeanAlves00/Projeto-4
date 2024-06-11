@@ -1,0 +1,67 @@
+@import 'variaveis';
+
+.footer {
+    padding: 26px 8px;
+
+    &__container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+        p {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__logo {
+        width: 80px;
+        margin: 0 auto 10px;
+    }
+
+    &__links {
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__item {
+            display: inline-block;
+
+            a {
+                text-decoration: none;
+                padding: 8px 16px;
+                display: block;
+
+                &:hover {
+                    color: $corTextoSecundaria;
+                }
+            }
+        }
+    }
+}
+
+.linguage-selector {
+    
+    img {
+        height: 18px;
+        width: 18px;
+    }
+
+    select {
+        background-color: transparent;
+        border: none;
+        color: $corTextoPrincipal;
+        cursor: pointer;
+        appearance: none;
+
+        &:hover {
+            color: $corTextoSecundaria;
+        }
+
+        option {
+            color: $corDeFundo;
+        }
+    }
+}
