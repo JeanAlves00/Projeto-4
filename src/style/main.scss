@@ -4,6 +4,7 @@
 @use 'avialable-devices';
 @use 'faq';
 @use 'footer';
+@use 'header';
 @import 'mixins';
 @import 'variaveis';
 
@@ -21,21 +22,47 @@ body {
 }
 
 .button {
-    display: block;
+    color: $corTextoSecundaria;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     width: 100%;
     height: 60px;
     font-size: 18px;
-    color: $corTextoSecundaria;
-    background-color: $corBotao;
     text-transform: uppercase;
     border-radius: 4px;
-    margin-top: 2vw;
-    margin-bottom: 8px;
     cursor: pointer;
+    text-decoration: none;
+    padding: 8px 14px;
+    border: 1px solid $corBotao;
 
-    &:hover {
-        background-color: $corBotaoHover;
+    &--primary {
+        background-color: $corBotao;
+       
+        &:hover {
+            background-color: lighten($corBotao, 3%);
+        }
+    }
+
+    &--secundary {
+        background-color: $corBotaoSecundario;
+        border-color: $corBotaoSecundario;
+
+        &:hover {
+            background-color: lighten($corBotaoSecundario, 3%);
+        }
+    }
+
+    &--dark {
+        background-color: $corBotaoDark;
+        border-color: $corTextoSecundaria;
+
+        &:hover {
+            background-color: $corTextoSecundaria;
+            color: $corDeFundo;
+
+        }
     }
 }
 
