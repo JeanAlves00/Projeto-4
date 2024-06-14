@@ -67,8 +67,9 @@
 
     @media (max-width: 768px) {
         background-image: url(../images/hero_celular.jpeg);
-        padding-top: 50vw;
+        padding-top: calc(50vw + 25px);
         background-size: contain;
         background-repeat: no-repeat;
+        margin-top: -55px;
     }
 }

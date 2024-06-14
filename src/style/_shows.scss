@@ -51,6 +51,16 @@
             &--is-active {
                 border-bottom: 5px solid $corTextoSecundaria;
             }
+
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            white-space: nowrap;
+            overflow-x: scroll;
+            padding-left: 20px;
         }
     }
 }
