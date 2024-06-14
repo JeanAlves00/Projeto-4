@@ -18,6 +18,10 @@
         &__branding {
             max-width: 320px;
             margin: 0 auto 38px;
+
+            @media (max-width: 768px) {
+                max-width: 180px;
+            }
         }
 
         .title--small {
@@ -46,8 +50,25 @@
                 .image2{
                     max-width: 97%;
                 }
+
+                @media (max-width: 768px) {
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 24px;
+                }
                 
             }
+
+            @media (max-width: 768px) {
+                display: block;
+            }
         }
+    }
+
+    @media (max-width: 768px) {
+        background-image: url(../images/hero_celular.jpeg);
+        padding-top: 50vw;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 }

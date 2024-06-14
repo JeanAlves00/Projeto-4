@@ -101,6 +101,16 @@ body {
             width: calc(50% - 5.6vw);
             flex-direction: column;
             justify-content: center;
+
+            @media (max-width: 768px) {
+                position: relative;
+                left: 0;
+                width: 100%;
+            }
         }
+    }
+
+    @media (max-width: 768px) {
+        display: block;
     }
 }
